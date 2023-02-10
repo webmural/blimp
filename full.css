@@ -1,0 +1,43 @@
+:any-link {
+  color: inherit;
+}
+
+:focus {
+  outline: thick double;
+  text-decoration-style: double;
+}
+
+:hover {
+  text-decoration-style: wavy;
+}
+
+@media (color) {
+  :focus {
+    background-color: blueviolet;
+    color: seashell;
+  }
+
+  ::selection {
+    background: #323;
+    color: #bae;
+  }
+
+  :root {
+    background-color: darkviolet;
+    color: seashell;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :focus {
+    background-color: turquoise;
+    color: indigo;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: seashell;
+    color: darkviolet;
+  }
+}
